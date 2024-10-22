@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc de Sant Martí</title>
+</head>
+<body>
+    <h2 onclick="funcion_color()">Arc de Sant Martí</h2>
+    
+    <p id="parrafos_rojo" onmousemove="this.style.color='red'" onmouseout="this.style.color='black'">roig, red, rojo</p>
+    <p id="parrafos_naranja" onmousemove="this.style.color='orange'" onmouseout="this.style.color='black'">taronja, orange, naranja</p>
+    <p id="parrafos_amarillo" onmousemove="this.style.color='yellow'" onmouseout="this.style.color='black'">groc, yellow, amarillo</p>
+    <p id="parrafos_verde" onmousemove="this.style.color='green'" onmouseout="this.style.color='black'">verd, green, verde</p>
+    <p id="parrafos_aqua" onmousemove="this.style.color='aqua'" onmouseout="this.style.color='black'">blau clar, light blue, azul claro</p>
+    <p id="parrafos_azul" onmousemove="this.style.color='blue'" onmouseout="this.style.color='black'">blau, blue, azul</p>
+    <p id="parrafos_morado" onmousemove="this.style.color='purple'" onmouseout="this.style.color='black'">morat, purple, morado</p>
+
+    <script>
+        function funcion_color() {
+        
+            let parraforojo = document.getElementById("parrafos_rojo");
+            let parrafonaranja = document.getElementById("parrafos_naranja");
+            let parrafoamarillo = document.getElementById("parrafos_amarillo");
+            let parrafoverde = document.getElementById("parrafos_verde");
+            let parrafoaqua = document.getElementById("parrafos_aqua");
+            let parrafoazul = document.getElementById("parrafos_azul");
+            let parrafomorado = document.getElementById("parrafos_morado");
+            
+            
+            parraforojo.style.color = 'red';
+            parrafonaranja.style.color = 'orange';
+            parrafoamarillo.style.color = 'yellow';
+            parrafoverde.style.color = 'green';
+            parrafoaqua.style.color = 'aqua';
+            parrafoazul.style.color = 'blue';
+            parrafomorado.style.color = 'purple';
+        }
+    </script>
+</body>
+</html>
